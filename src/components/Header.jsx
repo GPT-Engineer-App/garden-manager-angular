@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 
 const Header = () => {
   return (
@@ -6,6 +6,9 @@ const Header = () => {
       <Text fontSize="2xl" fontWeight="bold">
         Garden Management
       </Text>
+      <Button colorScheme="green" ml={4} onClick={() => window.location.reload()}>
+        +Add new Garden
+      </Button>
     </Box>
   );
 };
